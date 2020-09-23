@@ -1,0 +1,20 @@
+#header{
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+}
+body{
+    background-image: url(linear-gradient.png);
+    background-repeat: no-repeat;
+}
+.col-sm-4{
+    text-align: center;
+}
+footer{
+    font-size: 10px;
+    text-align: center;
+}
+#big{
+    font-weight: bold;
+    font-size: medium !important;
+}
