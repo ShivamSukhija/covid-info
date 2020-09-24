@@ -1,14 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-.row::after {
-    clear: both;
-    display: table;
-}
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}
 #header{
     text-align: center;
     font-weight: bold;
@@ -16,11 +5,13 @@
 }
 body{
     background-image: url(linear-gradient.png);
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
- 
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;  
 }
 .col-sm-4{
     text-align: center;
+    float: left;
+    display: inline-block;
+    width: 100%;
 }
 footer{
     font-size: 10px;
@@ -30,11 +21,14 @@ footer{
     font-weight: bold;
     font-size: medium !important;
 }
-[class*="col-"] {
-    width: 100%;
+footer{
+    clear: both;
 }
-@media only screen and (min-width:768px){
+@media screen and (min-width: 768px){
     .col-sm-4{
-        width: 33.33%;
+        width: 33.33%;        
+    }
+    #center{
+        width: 100%;
     }
 }
